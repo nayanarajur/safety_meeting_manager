@@ -15,4 +15,5 @@ This web application will provide employees with the ability to electronically r
 Applications will also allow the employee to view a list of previous discussions they have recorded.
 
 ### User flow diagram
+
 ![alt text](https://github.com/nayanarajur/safety_meeting_manager/blob/main/documents/user_flow.jpg)
