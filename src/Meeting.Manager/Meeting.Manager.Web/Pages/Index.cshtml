@@ -1,5 +1,7 @@
 ﻿@page
 @model IndexModel
+@using  Meeting.Manager.Web.Model
+
 @{
     ViewData["Title"] = "Home page";
 }
@@ -8,31 +10,73 @@
     <h1 class="display-8">MOM Capture</h1>
 </div>
 <div>
-    <table>
-        <tr>
-            <td>The person who observed the discussion</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Date of discussion</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Location of discussion</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Colleague(s) the discussion was with</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Subject of discussion</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Outcomes</td>
-            <td></td>
-        </tr>
-    </table>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form method="post">
+        <table>
+            <tr>
+                <td width="350">The person who observed the discussion</td>
+                <td>
+                    <input type="text" name="personObserved" class="form-control input-group-lg" autofocus required />
+                </td>
+            </tr>
+            <tr>
+                <td>Date of discussion</td>
+                <td>
+                    <input type="datetime-local" name="dateOfDiscussion" class="form-control input-group-lg" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Location of discussion</td>
+                <td>
+                    <input type="text" name="location" class="form-control input-group-lg" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Colleague(s) the discussion was with</td>
+                <td>
+                    <input type="text" name="colleagues" class="form-control input-group-lg" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Subject of discussion</td>
+                <td>
+                    <input type="text" name="subjectOfDiscussion" class="form-control input-group-lg" required />
+                </td>
+
+            </tr>
+            <tr>
+                <td>Outcomes</td>
+                <td>
+                    <textarea name="outcome" class="form-control input-group-lg" required></textarea>
+                </td>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Save" class="btn btn-info" /></td>
+            </tr>
+        </table>
+    </form>
+    <div class="text-center">
+        <h4>Meetings List</h4>
+        <hr />
+        <table class="table table-bordered">
+            <tr>
+                <th>Person Observed</th>
+                <th>Date Of Discussion</th>
+                <th>Location</th>
+                <th>Colleagues</th>
+                <th>Subject Of Discussion</th>
+                <th>Outcome</th>
+            </tr>
+            @foreach (Meeting meeting in Model.Meetings)
+            {
+                <tr>
+                    <td>@meeting.PersonObserved</td>
+                    <td>@meeting.DateOfDiscussion</td>
+                    <td>@meeting.Location</td>
+                    <td>@meeting.Colleagues</td>
+                    <td>@meeting.SubjectOfDiscussion</td>
+                    <td>@meeting.Outcome</td>
+                </tr>
+            }
+        </table>
+    </div>
 </div>
