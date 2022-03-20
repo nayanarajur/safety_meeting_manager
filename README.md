@@ -28,3 +28,6 @@ Applications will also allow the employee to view a list of previous discussions
     * Set `Meeting.Manager.Web` as the startup project
     * Run the project
     * Enter the data and save the details.
+
+### Application
+![alt text](https://github.com/nayanarajur/safety_meeting_manager/blob/main/documents/app.png)
