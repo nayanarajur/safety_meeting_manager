@@ -19,10 +19,12 @@ Applications will also allow the employee to view a list of previous discussions
 ![alt text](https://github.com/nayanarajur/safety_meeting_manager/blob/main/documents/user_flow.jpg)
 
 ## Getting Started
-
-1. Run the database migrator project
-    * Set `Meeting.Manager.Database` as the startup project
+1. Clone the repository and open the Visual studio solution `Meeting.Manager.sln` inside folder `\src\Meeting.Manager`
+2. Run the database migrator project
+    * Set `Meeting.Manager.Database` as the startup project inside src/
     * Run the project
-2. Run the web site project
+    * This should create a database `Meeting.Manager.Database` inside the server `(localdb)\ProjectsV13`
+3. Run the web site project
     * Set `Meeting.Manager.Web` as the startup project
     * Run the project
+    * Enter the data and save the details.
