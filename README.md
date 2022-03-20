@@ -30,4 +30,4 @@ Applications will also allow the employee to view a list of previous discussions
     * Enter the data and save the details.
 
 ### Application
-![alt text](https://github.com/nayanarajur/safety_meeting_manager/blob/main/documents/app.png)
+![alt text](https://github.com/nayanarajur/safety_meeting_manager/blob/main/documents/app.PNG)
