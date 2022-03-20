@@ -17,3 +17,12 @@ Applications will also allow the employee to view a list of previous discussions
 ### User flow diagram
 
 ![alt text](https://github.com/nayanarajur/safety_meeting_manager/blob/main/documents/user_flow.jpg)
+
+## Getting Started
+
+1. Run the database migrator project
+    * Set `Meeting.Manager.Database` as the startup project
+    * Run the project
+2. Run the web site project
+    * Set `Meeting.Manager.Web` as the startup project
+    * Run the project
